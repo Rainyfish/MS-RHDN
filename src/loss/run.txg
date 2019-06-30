@@ -1,0 +1,16 @@
+--template
+RDID_RES
+--save
+RDID_RES_4_ShareGAN_0226_no_pretrain_res1
+--scale
+4
+--save_results
+--patch_size
+192
+--reset
+--decay
+200
+--loss
+1*VGG54+0.005*RGAN+0.01*L1
+--res_scale
+0.1

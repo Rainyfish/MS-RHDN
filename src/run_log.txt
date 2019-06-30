@@ -1,0 +1,11 @@
+//remove the csc change patch 32, epches 100, batch_size 8,
+/home/yyt/anaconda3/envs/pytorch_1.0/bin/python /home/yyt/Python/EDSR-PyTorch-master/src/main.py --template RDID_RES --save RDID_RES_4_org  --scale 4  --save_results --patch_size 128 --batch_size 8 --epochs 100 --decay 50
+/home/yyt/anaconda3/envs/pytorch_1.0/bin/python /home/yyt/Python/EDSR-PyTorch-master/src/main.py --template RDID_RES --save RDID_RES_4_remove_ASPP  --scale 4  --save_results --patch_size 128 --batch_size 8 --epochs 100 --decay 50
+
+//
+/home/yyt/anaconda3/envs/pytorch_1.0/bin/python /home/yyt/Python/EDSR-PyTorch-master/src/main.py --template RDID_RES --save RDID_RES_8_0203 --scale 8 --save_results --patch_size 384 --data_test DIV2K --pre_train /home/yyt/Python/model_0201/model_best.pt --reset
+
+/home/msn/anaconda3/envs/pytorch_10/bin/python /home/msn/LCC/Pytorch/EDSR-PyTorch-master/src/main.py --template RDID_RES --save RDID_RES_8_G10B5G64_noGroup_0212 --scale 8 --data_test DIV2K --save_results --patch_size 384 --batch_size 16 --pre_train /home/msn/LCC/Pytorch/model_0210/model_best.pt --reset --data_range 1-800/801-812 --lr 3.125e-6 --decay 100
+
+
+python main.py --template RDID_RES --model RDID_RES --scale 4 --pre_train /home/yyt/Python/model_4/model_best.pt  --test_only --save_results  --dir_data /home/yyt/DIV2K/ --save RDID_4_test_single --data_test Manga109
