@@ -184,7 +184,7 @@ class ResidualGroup(nn.Module):
         return res_2
 
 
-## Residual Channel Attention Network (RCAN)
+#MS-RHDN
 class RDID_RES(nn.Module):
     def __init__(self, args, conv=common.default_conv):
         super(RDID_RES, self).__init__()
